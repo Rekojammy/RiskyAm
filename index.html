@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <title>Risky Am - Guess the Numbers!</title>
+</head>
+
+<body>
+
+
+
+    <main class="p-2 pt-5">
+        <section class="w-100 d-flex justify-content-center mb-4">
+            <h1>RiskyAm!</h1>
+        </section>
+
+        <section class="w-100 d-flex justify-content-center">
+            <form>
+                <div class="d-flex">
+                    <input type="text" id="luckyNum" value="123456" class="form-control" placeholder="Input the lucky numbers">
+                    <button type="button" id="calculate" class="btn btn-danger">Calculate</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="d-flex mt-3 justify-content-between mx-5">
+            <p class="fw-bold">Outcome: </p>
+            <div class="d-flex justify-content-between">
+                <p id="decr">-</p>
+                <p id="outcome" class="mx-4 fw-bold fs-5">0</p>
+                <p id="incr">+</p>
+            </div>
+        </section>
+
+        <section class="d-flex mt-5 w-100 justify-content-center">
+            <div class="w-75 d-flex justify-content-between ">
+                <p class="fw-bold">Name</p>
+                <p class="fw-bold">Number</p>
+            </div>
+        </section>
+
+        
+        <section class="d-flex justify-content-center d-none resultModal">
+            <div class="border odal text-center p-2 rounded-3 w-75 resultModa" id="ex2">
+                <div class="close" id="resultWin">
+                </div>
+                <p class="emoji1">&#128516; &#128079; &#128165; &#127881;</p>
+            </div>
+        </section>
+
+        <section class="d-flex flex-column mt-2 w-100 align-items-center justify-content-center" id="guess">
+            <div class="w-75 d-flex justify-content-between">
+                <p class="names">Fidelis</p>
+                <p class="matched"><span class="match">0</span> Matched</p>
+                <p class="nums">432899</p>
+            </div>
+            <div class="w-75 d-flex justify-content-between">
+                <p class="names">Adams</p>
+                <p class="matched"><span class="match">0</span> Matched</p>
+                <p class="nums">037589</p>
+            </div>
+            <div class="w-75 d-flex justify-content-between">
+                <p class="names">Favour</p>
+                <p class="matched"><span class="match">0</span> Matched</p>
+                <p class="nums">034589</p>
+            </div>
+        </section>
+
+        <section class="d-flex justify-content-between mx-5">
+            <div class="addBtn rounded-circle border" id="removeBtn">
+                <img class="rounded-circle" width="30" src="./img/remove-icon-vector-26201437.jpg" alt="Remove Guess">
+            </div>
+
+            <div class="addBtn rounded-circle border" id="refresh">
+                <img class="rounded-circle" width="30" src="./img/refresh-button-orange.png" alt="Refresh">
+            </div>
+
+            <a href="#ex1" class="addBtn rounded-circle border" rel="modal:open" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+                <img width="30" src="./img/create-flat-orange-color-icon-vector-608059.jpg" alt="Add Guess">
+            </a>
+        </section>
+
+        <section>
+            <div id="ex1" class="modal p-3">
+                <span class="mb-3 errmsg">.</span>
+                <input type="text" id="guesserName" placeholder="Enter Name" class="form-control mb-3 w-100">
+                <input type="text" id="guesserNumber" placeholder="Enter Number" class="form-control mb-3 w-100">
+                <button class="btn btn-dark w-100 mb-3" id="addBtn">Add</button>
+
+                <a href="#" rel="modal:close" class="text-danger text-decoration-none fw-bold text-center w-100 fs-5"><p>Close</p></a>
+              </div>
+
+              <!-- <p><a href="#ex1" rel="modal:open">Open Modal</a></p> -->
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <!-- <script src="./js/bootstrap.min.js"></script> -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

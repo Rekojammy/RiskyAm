@@ -1,0 +1,20 @@
+.addBtn {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.modal {
+    height: 15rem;
+    overflow: hidden;
+}
+
+.resultModal {
+    position: relative;
+    background-color: aliceblue;
+}
+
+.resultModa {
+    position: absolute;
+    background-color: aliceblue;
+}
