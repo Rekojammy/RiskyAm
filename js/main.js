@@ -76,7 +76,7 @@ $(function () {
 
         let arr3 = []
         match.forEach(elem => {
-            if (elem.innerText >= $("#outcome").text()) {
+            if ($("#outcome").text() !== "0" && elem.innerText >= $("#outcome").text()) {
                 let winner = elem.parentElement.parentElement.firstElementChild.innerText;
                 arr3.push(winner)
             }
