@@ -13,28 +13,26 @@
 
 <body>
 
-
-
-    <main class="p-2 pt-5">
-        <section class="w-100 d-flex justify-content-center mb-4">
+    <main class="p-2 py-5 bg-white">
+        <section class="w-100 d-flex vh-sm-100 justify-content-center mb-4">
             <h1>RiskyAm!</h1>
         </section>
 
         <section class="w-100 d-flex justify-content-center">
             <form>
                 <div class="d-flex">
-                    <input type="text" id="luckyNum" class="form-control" placeholder="Input the lucky numbers">
+                    <input type="text" id="luckyNum" class="form-control me-2" placeholder="Input the lucky numbers">
                     <button type="button" id="calculate" class="btn btn-danger">Calculate</button>
                 </div>
             </form>
         </section>
 
-        <section class="d-flex mt-3 justify-content-between mx-5">
-            <p class="fw-bold">Outcome: </p>
+        <section class="d-flex mt-3 justify-content-between justify-content-lg-center mx-5">
+            <p class="fw-bold me-5">Outcome: </p>
             <div class="d-flex justify-content-between">
-                <p id="decr">-</p>
-                <p id="outcome" class="mx-4 fw-bold fs-5">0</p>
-                <p id="incr">+</p>
+                <p id="decr" class="outBtn" style="cursor: pointer;">-</p>
+                <p id="outcome" class="mx-3 fw-bold fs-5">0</p>
+                <p id="incr" class="outBtn" style="cursor: pointer;">+</p>
             </div>
         </section>
 

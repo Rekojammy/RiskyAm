@@ -4,6 +4,11 @@
     cursor: pointer;
 }
 
+body {
+    width: 100%;
+    background-image: url(../img/background-with-numbers.jpg);
+}
+
 .modal {
     height: 15rem;
     overflow: hidden;
@@ -17,4 +22,25 @@
 .resultModa {
     position: absolute;
     background-color: aliceblue;
+}
+
+@media screen and (min-device-width : 480px) {
+    main {
+        height: 100vh;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        width: 50rem;
+        margin-top: 50px;
+        border-radius: 10px;
+        height: 100%;
+    }
 }

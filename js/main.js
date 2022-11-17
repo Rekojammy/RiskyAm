@@ -1,6 +1,5 @@
 $(function () {
     $("#addBtn").click(function () {
-        // $("#guess").css("background-color", "red");
         let guesserName = $("#guesserName").val();
         let guesserNumber = $("#guesserNumber").val();
         if (guesserName === "" || guesserNumber === "") {
@@ -106,5 +105,6 @@ $(function () {
         $("#outcome").text("0");
         $("#luckyNum").val("");
         $("#guess").html("");
+        outcome = 0;
     })
 })
